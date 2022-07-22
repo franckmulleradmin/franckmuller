@@ -48,7 +48,8 @@ const AddAdmin = async (req, res, next) => {
     console.log("failed");
     return next(new HttpsError("Registering failed, Please try again.", 500));
   }
-  res.status(201).json({ user: Admin_add.toObject({ getters: true }) });
+  // res.status(201).json({ user: Admin_add.toObject({ getters: true }) });
+  res.status(201).json({ user: "User" });
 };
 // Get All login
 const GetAdminUser = async (req, res, next) => {
