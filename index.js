@@ -10,7 +10,7 @@ var cors = require("cors");
 const app = express();
 app.use(bodyParser.json());
 // app.use(cors());
-app.use(cors({ credentials: true, origin: "http://localhost:3001" }));
+app.use(cors());
 // PORT
 app.use("/register", RegisterRoutes);
 app.use("/admin", AdminRoutes);
